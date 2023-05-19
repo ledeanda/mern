@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Snowburst+One:400|Sora:400");
+
+.InstanceBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #5595ea, #194989);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Snowburst One";
+  font-size: 4rem;
+  margin-bottom: -2.5rem;
+  text-align: center;
+}
+
+.instance {
+  position: relative;
+
+  padding: 1rem;
+  background-color: lightpink;
+  margin: 5rem auto;
+  height: 150%;
+  width: 35%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1.85);
+}
+
+.instance__pai {
+  font-size: 2rem;
+  background-color: unset;
+  border: none;
+  border-bottom: 1.5px solid black;
+  padding-bottom: 0.5rem;
+  text-align-last: center;
+  font-family: "Snowburst One";
+  outline: none;
+  z-index: 999;
+}
+
+
+.instance__fileInput {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.instance__selectedImage {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  display: block;
+  max-width: 25rem;
+  height: auto;
+  max-height: 15rem;
+  margin-bottom: 1rem;
+
+  position: static;
+}
+
+.instance__description {
+  z-index: 2;
+  background-color: white;
+  outline: none;
+  resize: none;
+  margin-top: -2.65rem;
+  height: 5.5rem;
+  width: 15rem;
+  position: absolute;
+  right: 52%;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1.85);
+}
+
+.instance_addDesc {
+  z-index: 1;
+  display: flex;
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: auto;
+  margin-top: 1rem;
+  position: absolute;
+}
+
+.instance__hideDesc {
+  position: absolute;
+  display: flex;
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+  right: 46%;
+  top: 71.5%;
+  width: 1.5rem;
+  font-weight: bold;
+}
+
+.instance__buttonpost {
+  display: block;
+
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 4.3rem;
+  background-color: lightblue;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.instance__buttonpost:hover {
+  background-color: blue;
+  color: white;
+}
+
+.instance__noImageError {
+  color: red;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: underline;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 2.15rem;
+
+  
+
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+  .instance {
+    height: 40%;
+    width: 65%;
+  }
+  .instance__pai {
+    font-size: 1.5rem;
+  }
+  .instance__description {
+    margin-top: 2rem;
+    height: 6.5rem;
+    width: 15rem;
+  }
+  .instance__buttonpost {
+    margin-top: 0.5rem;
+  }
+}
